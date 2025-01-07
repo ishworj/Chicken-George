@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --primary-color:aliceblue;
+    --secondary-color:orangered;
+    --third-colour:white;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.after-header{
+    margin-top: 14vh;
+    background-color: rgba(255, 68, 0, 0.484);
+}

@@ -1,0 +1,54 @@
+
+.menu-section{
+    margin-top: 19vh;
+}
+.content{
+    max-width: 90vw;
+}
+
+.sliding-bar{
+    position: fixed;
+    top: 14vh;
+    width: 100%;
+}
+  .sticiky-sidebar{
+    position: sticky; 
+    top:24vh; 
+    height: fit-content;
+    overscroll-behavior: contain;
+  }
+  
+  .sticiky-sidebar a {
+    color: black;
+    font-weight: 500;
+  }
+
+  .scroll-content {
+    overflow-y: auto;
+    height: 100vh;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
+  }
+  .scroll-content div{
+    display: flex;
+    flex-wrap: wrap;
+    margin:2rem 0 2rem 0;
+    justify-content: space-around;
+    scroll-margin-top:28vh
+  }
+  p {
+    scroll-margin-top: 28vh;
+    text-align: center;
+}
+li{
+    padding: 5px;
+    list-style: none;
+}
+
+
+@media (min-width:962px){
+    .container{
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,27 @@
+.c-item img{
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .c-carousel{
+    margin-top: 14vh ;
+  }
+.overlay{
+    background: #0000006d;
+    position: absolute;
+    top: 14vh;
+    height: 80vh;
+    width: 100%;
+}
+
+.slide-info{
+    z-index: 2;
+}
+.content{
+    position: absolute;
+    top: 30vh;
+    color: white;
+    left:50vw;
+    transform: translate(-50%);
+}
