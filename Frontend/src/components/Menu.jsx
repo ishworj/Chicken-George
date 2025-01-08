@@ -52,8 +52,8 @@ const Menu = ()  => {
   return (
 <div className="menu" >
 
-    <div className="bg-dark text-white text-center sliding-bar ">
-        welcome to chicken george
+    <div className="bg-dark text-white text-center sliding-bar p-2 ">
+        welcome to chicken george,use a cupoon code for discount 🚀
     </div>
     <Container className="menu-section">
         <Row>

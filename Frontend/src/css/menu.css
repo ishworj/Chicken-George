@@ -30,17 +30,17 @@
     scroll-behavior: smooth;
     
   }
-  .scroll-content div{
+  .scroll-content > div{
     display: flex;
     flex-wrap: wrap;
     margin:2rem 0 2rem 0;
     justify-content: space-around;
-    scroll-margin-top:28vh
+    scroll-margin-top:29vh;
+    gap: 2rem;
   }
-  p {
-    scroll-margin-top: 28vh;
-    text-align: center;
-}
+
+
+
 li{
     padding: 5px;
     list-style: none;
