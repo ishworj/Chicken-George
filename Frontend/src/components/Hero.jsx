@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Accordion from 'react-bootstrap/Accordion';
 import "../css/hero.css"
 
 const Hero = () => {
@@ -51,6 +52,88 @@ const Hero = () => {
             <p>Location: Southgate Shopping Center, Sylvania</p>
             <button className='p-2 rounded-pill text-danger fw-bold'>Order Online</button>
         </div>
+
+
+        <section className='browseMenu d-flex flex-row justify-content-around m-5'>
+
+            <div className=' browsemenu-photo overflow-hidden'>
+              <h1 className='text-center'>Browse menu</h1>
+              <img src="/slide2.jpg" alt="" style={{height:'100% ',width:"100%"}} />
+            </div>
+
+            <div className='featured-products'>
+
+              <h1 className='text-center pb-2'>Our featured Products</h1>
+              <div className='d-flex justify-content-between gap-4 text-center mx-5 ' >
+
+                <div className='f-item'>
+                <img src="/HotFood/tenderlions.jpg" 
+                alt="" /> 
+                <h4>Tenderlions</h4>
+                </div>
+                <div className='f-item'>
+                <img src="/HotFood/tenderlions.jpg" 
+                alt="" /> 
+                <h4>Tenderlions</h4>
+                </div>
+                <div className='f-item'>
+                <img src="/HotFood/tenderlions.jpg" 
+                alt="" /> 
+                <h4>Tenderlions</h4>
+                </div>
+                
+                
+              </div>
+
+              <div className='d-flex justify-content-center align-items-center m-2'>
+              <div className='text-center'>
+                <h3>
+                  Get what you want <br />all yours
+                </h3>
+              <button className='goToMenu btn btn-dark fs-4' >
+                <a href="#fresh-chicken" className='text-white'>Browse here</a>
+              
+              </button>
+              </div>
+              </div>
+
+              
+            </div>
+        </section>
+
+
+      <section className='faqs  bg-dark p-5 pt-2'>
+        
+        <h1 className='text-center text-white py-0'>FAQ<sub>s</sub></h1>
+
+        <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header >what time do you open ?</Accordion.Header>
+        <Accordion.Body>
+          we are open 7-5 weekdays and 7-4:30 on weekends. 
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Is this chicken hallal </Accordion.Header>
+        <Accordion.Body>
+          All our chickens are deleverd form stegels which provides only halal chicken
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>Is this chicken hallal </Accordion.Header>
+        <Accordion.Body>
+          All our chickens are deleverd form stegels which provides only halal chicken
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>Is this chicken hallal </Accordion.Header>
+        <Accordion.Body>
+          All our chickens are deleverd form stegels which provides only halal chicken
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+
+      </section>
 
     </>
   

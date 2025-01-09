@@ -1,18 +1,24 @@
 import React from 'react'
+import "../css/item.css"
 
 const Item = ({item}) => {
   const {name,desc,price, imgSrc}=item;
-  console.log(name);
-  console.log(price);
-  return (
-    <div style={{height:"275px", width:"220px"}} className='item d-flex flex-column justify-content-between rounded shadow'>
-      
-        <img src={imgSrc} alt="" style={{height:"65%",width:"100%"}}/>
 
-        <div className='text-center p-1 '>
+  return (
+    <div style={{height:"250px", width:"180px"}} className='item d-flex flex-column justify-content-center item'>
+        
+        <div className='imgContainer'>
+          <img src={imgSrc} alt=""/>
+        </div>
+       
+
+        <div className='text-center p-2 item-info '>
         <p><b>{name}</b></p>
         <p>{desc}</p>   
-        <p>{price}</p>
+        <p className='price'>{price}</p>
+        <div><button id='addToCart'>
+          Add to cart <i className="fa-solid fa-cart-shopping" style={{color:"rgb(255,69,0)"}}></i>
+          </button></div>
         </div>
         
 

@@ -1,6 +1,7 @@
 
 .menu-section{
-    margin-top: 19vh;
+    margin-top: 23vh;
+    
 }
 .content{
     max-width: 90vw;
@@ -10,6 +11,7 @@
     position: fixed;
     top: 14vh;
     width: 100%;
+    display: none;
 }
   .sticiky-sidebar{
     position: sticky; 
@@ -28,13 +30,14 @@
     height: 100vh;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    background-color: rgba(240, 248, 255, 0.484);
     
   }
   .scroll-content > div{
     display: flex;
     flex-wrap: wrap;
     margin:2rem 0 2rem 0;
-    justify-content: space-around;
+    justify-content: center;
     scroll-margin-top:29vh;
     gap: 2rem;
   }

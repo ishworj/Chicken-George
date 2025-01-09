@@ -1,0 +1,47 @@
+
+.item{
+    padding: 2px;
+    background-color: rgba(4, 4, 5, 0.119);
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    max-height: 275px;
+   
+}
+
+.item img{
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.item:hover {
+    cursor: pointer;
+    
+}
+.item-info > p {
+    margin-bottom: 0;
+}
+
+.item-info .price{
+    color:var(--secondary-color);
+    font-weight: bold;
+}
+
+.imgContainer{
+    overflow: hidden;
+}
+.imgContainer img{
+    height: 100%;
+   width: 100%;
+    
+}
+
+
+#addToCart{
+    border-radius: 10px;
+    margin-top: 0.5em;
+}
+
+#addToCart:hover{
+    transform: scale(1.1);
+    background-color:white ;
+}

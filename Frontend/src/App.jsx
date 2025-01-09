@@ -15,10 +15,9 @@ function App() {
   return (
     <div className='wrapper'>
     <Header />
-    {/* <Hero /> */}
-    <Menu />
-
-    {/* <About /> */}
+    <Hero />
+    <Menu /> 
+    <About />
     <Footer />
     </div>
   )
