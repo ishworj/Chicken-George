@@ -16,15 +16,6 @@ const About = () => {
             </div>
         </div>
     </section>
-	<section className="bg-dark text-center p-5 ">
-		<div >
-			<h3 className="text-white">SUBSCRIBE OUR NEWSLETTERS NOW</h3>
-			<form action="#" method="Post" className='d-flex justify-content-center'>
-				<input type="text" name="text" placeholder="Enter Your Email Id" className='p-2 mx-2 ' />
-				<button type="button" className="btn btn-default bg-white ">Subscribe<i className="fa fa-envelope"></i></button>
-			</form>
-		</div>
-	</section>
     </>
     
   )

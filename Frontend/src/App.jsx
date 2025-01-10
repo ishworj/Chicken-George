@@ -1,25 +1,19 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-
-
-import Header from './components/Header'
-import Hero from './components/Hero';
-import Menu from './components/Menu';
-import Footer from './components/Footer';
-import About from './components/About';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from './components/LandingPage';
 
 function App() {
-
-
   return (
-    <div className='wrapper'>
-    <Header />
-    <Hero />
-    <Menu /> 
-    <About />
-    <Footer />
+    <BrowserRouter>
+      <div className='wrapper'>
+        <Routes>
+          <Route path='*' element={<LandingPage />}></Route>
+        </Routes>
     </div>
+    </BrowserRouter>
+    
   )
 }
 

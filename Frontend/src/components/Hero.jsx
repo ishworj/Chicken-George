@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Accordion from 'react-bootstrap/Accordion';
 import "../css/hero.css"
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -91,8 +92,7 @@ const Hero = () => {
                   Get what you want <br />all yours
                 </h3>
               <button className='goToMenu btn btn-dark fs-4' >
-                <a href="#fresh-chicken" className='text-white'>Browse here</a>
-              
+              <Link to={{ pathname:"/menu"}} className='text-white'>Browse here</Link>
               </button>
               </div>
               </div>
