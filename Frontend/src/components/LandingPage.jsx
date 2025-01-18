@@ -6,6 +6,36 @@ import Menu from './Menu';
 import About from './About';
 import "../css/landingPage.css"
 const LandingPage = () => {
+
+
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const email = formData.get("emailId");
+    
+        subscribe(email)
+          .then((message) => {
+            alert(message); // Provide user feedback
+          })
+          .catch((error) => {
+            console.error("Subscription error:", error);
+            alert("Subscription failed. Please try again.");
+          });
+      };
+    
+      const subscribe = async (email) => {
+        try {
+          await axios.post("http://localhost:8080/api/v1/subscribers", {
+            email: email,
+          });
+          return "Subscribed successfully!";
+        } catch (error) {
+          console.error(error);
+          throw new Error("Subscription failed");
+        }
+      };
+
+
   return (
     <>
     {/* header */}
@@ -39,9 +69,9 @@ const LandingPage = () => {
     <section className="bg-dark text-center p-5 ">
 		<div >
 			<h3 className="text-white">SUBSCRIBE OUR NEWSLETTERS NOW</h3>
-			<form action="#" method="Post" className='d-flex justify-content-center'>
-				<input type="text" name="text" placeholder="Enter Your Email Id" className='p-2 mx-2 ' />
-				<button type="button" className="btn btn-default bg-white ">Subscribe<i className="fa fa-envelope"></i></button>
+			<form action=""  onSubmit={handleOnSubmit} className='d-flex justify-content-center'>
+				<input type="email" name="emailId" placeholder="Enter Your Email Id" className='p-2 mx-2 ' />
+				<button  className="btn btn-default bg-white ">Subscribe<i className="fa fa-envelope"></i></button>
 			</form>
 		</div>
 	</section>

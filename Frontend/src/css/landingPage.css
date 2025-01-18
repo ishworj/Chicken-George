@@ -44,6 +44,79 @@ header{
  }
 
 
+ /* hero */
 
- /* footer  */
- 
+ .c-item img{
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .c-carousel{
+    margin-top: 14vh ;
+  }
+.overlay{
+    background: #0000006d;
+    position: absolute;
+    top: 14vh;
+    height: 80vh;
+    width: 100%;
+}
+
+.slide-info{
+    z-index: 2;
+}
+.content{
+    position: absolute;
+    top: 30vh;
+    color: white;
+    left:50vw;
+    transform: translate(-50%);
+}
+
+.browseMenu{
+  height: 70vh;
+}
+
+.browsemenu-photo {
+  width: 50%;
+}
+
+.featured-products img{
+  height: 200px;
+  width: 200px;
+}
+
+ /* about */
+ #about-us {
+    height: 80vh;
+}
+
+.image-container {
+    position: relative;
+    height: 100%; 
+    background-image: url('family-photo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.overlayy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+.text-content{
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    z-index:2;
+
+}

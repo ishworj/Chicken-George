@@ -1,11 +1,10 @@
 import React from 'react'
 import Item from './Item'
-import "../css/category.css"
 
-const Category = ({categoryid,items}) => {
+const Category = ({items}) => {
   return (
-    <div id={categoryid} >
-   { items.map((item,i)=><Item item={item} key={i} />)}
+    <div  >
+   {items && items.map((item)=><Item item={item} key={item._id} />)}
    </div>
    )}
 

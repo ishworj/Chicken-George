@@ -1,18 +1,18 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Accordion from 'react-bootstrap/Accordion';
-import "../css/hero.css"
 import { Link } from "react-router";
 
 const Hero = () => {
   return (
     <>
-
+      <link rel="preload" href="slide1.jpg" as="image" />
       <Carousel className='c-carousel' >
       <Carousel.Item interval={3000}  className='c-item'>
         <img
           src="slide1.jpg"
           alt="first slide"
+          loading="lazy"
         />
         <Carousel.Caption className='slide-info'>
           <h3>Delicious Hot Cooked Chicken </h3>
@@ -23,6 +23,7 @@ const Hero = () => {
         <img
           src="slide2.jpg"
           alt="Second slide"
+          loading="lazy"
         />
         <Carousel.Caption className='slide-info'>
           <h3>Hot Cooked Chicken - Perfectly Prepared</h3>
@@ -34,6 +35,7 @@ const Hero = () => {
         <img
           src="slide3.jpg"
           alt="Third slide"
+          loading="lazy"
         />
         <Carousel.Caption className='slide-info'>
           <h3>Fresh Raw Chicken - Ready to Cook</h3>

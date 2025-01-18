@@ -38,8 +38,11 @@
     flex-wrap: wrap;
     margin:2rem 0 2rem 0;
     justify-content: center;
-    scroll-margin-top:29vh;
     gap: 2rem;
+  }
+
+  .scroll-content > h5{ 
+    scroll-margin-top:25vh;
   }
 
 
